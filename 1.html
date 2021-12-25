@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <button id="btn" onchange="aaaaa"></button>
+</head>
+<body>
+<script>
+  if ('a' in window) {
+    var a = 10
+  }
+  console.log(a)
+  var k = new Date()
+  console.log(k)
+  num = 123
+  function fun1() {
+    var num = 123
+    return num++
+  }
+  fun1()
+  console.log(num)
+  var msg = 'hello'
+  for (var i = 0; i < 10; i++) {
+    var msg = 'hello' + i * 2 + i
+    console.log(msg)
+  }
+  var str = 'zdsy.111@163.com'
+  console.log(str.indexOf('.'))
+  function aaaaa (val) {
+    console.log(val)
+  }
+  var a = /123/
+  var b = /123/
+  console.log(a)
+  console.log(b)
+  console.log(a == b, a === b)
+  function foo() {
+    var oldName = foo.name
+    foo.name = 'bar'
+    console.log(oldName + foo.name)
+  }
+  foo()
+
+  var emp = new Array(5)
+  emp[1] = 1
+  emp[2] = 3
+  console.log(emp.length)
+  console.log(undefined == null)
+  var a = new Object()
+  a.value = 5
+  b = a
+  b.value = 2
+  console.log(a.value)
+  console.log(0.1 + 0.1 + 0.1)
+</script>
+</body>
+</html>
